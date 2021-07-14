@@ -1,10 +1,6 @@
-const navListEl = document.querySelector('#categories');
-console.log(navListEl);
+const categoriesListEl = document.querySelectorAll('.item')
+console.log(`В списке ${categoriesListEl.length} категории.`);
 
-const navItemEl = document.querySelectorAll('.item');
-const quantityElements = `В списке ${navItemEl.length} категории`;
-console.log(quantityElements);
-
-const titleEl = document.querySelectorAll('.item h2');
-console.log(...titleEl);
-
+const showCategories = element => element.forEach(el =>
+    console.log(`Категория: ${el.querySelector(`h2`).textContent}. Количество элементов: ${el.querySelectorAll(`li`).length}.`))
+showCategories(categoriesListEl);
