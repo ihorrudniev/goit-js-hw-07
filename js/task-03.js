@@ -14,8 +14,6 @@ const images = [
   },
 ];
 
-// Вариант 1
-
 const galleryRef = document.querySelector('#gallery');
 
 const createImageEl = (acc, { url, alt }) =>
