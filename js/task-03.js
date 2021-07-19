@@ -13,27 +13,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-// // Вариант 1
 
-// const galleryRef = document.querySelector('#gallery');
-
-//   const imagesRef = [];
-//   for (let i = 0; i < images.length; i += 1) {
-//     const option = images[i];
-//     const galleryListRef = document.createElement('li');
-//     const galleryImagesRef = document.createElement('img');
-//     galleryImagesRef.src = option.url;
-//     galleryImagesRef.alt =  option.alt;
-
-//     imagesRef.push(galleryImagesRef)
-//   };
-
-//   for (let element of images)
-//     document.querySelector('#gallery').insertAdjacentHTML('beforeEnd', `<li><img src="${element.url}" width = "320" alt="${element.alt}" ></li>`);
-
-//     console.log(galleryRef);
-
-// Вариант 2
+// Вариант 1
 
 const galleryRef = document.querySelector('#gallery');
 
