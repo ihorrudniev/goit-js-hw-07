@@ -7,7 +7,7 @@ const ingredients = [
   'Приправы',
 ];
 
-const listEl = document.querySelector('#ingredients');
+const listIngredientsRef = document.querySelector('#ingredients');
 
 const elements = ingredients.map(element => {
   const itemEl = document.createElement('li');
@@ -16,6 +16,6 @@ const elements = ingredients.map(element => {
   return itemEl;
 });
  
-listEl.append(...elements);
+listIngredientsRef.append(...elements);
 
-console.log(listEl);
+console.log(listIngredientsRef);
